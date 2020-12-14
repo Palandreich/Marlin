@@ -500,35 +500,14 @@
   #if ENABLED(PID_PARAMS_PER_HOTEND)
     // Specify between 1 and HOTENDS values per array.
     // If fewer than EXTRUDER values are provided, the last element will be repeated.
-    #define DEFAULT_Kp_LIST {  38.03,  21.73 }
-    #define DEFAULT_Ki_LIST {   5.89,   1.54 }
-    #define DEFAULT_Kd_LIST {  61.41,  76.55 }
+    #define DEFAULT_Kp_LIST {  25.00,  26.73 }
+    #define DEFAULT_Ki_LIST {   2.70,   5.10 }
+    #define DEFAULT_Kd_LIST {  57.00,  64.00 }
   #else
     #define DEFAULT_Kp  22.20
     #define DEFAULT_Ki   1.08
     #define DEFAULT_Kd 114.00
   #endif
-
-  // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
-  // Creality Ender-3
-  // #define DEFAULT_Kp 21.73
-  // #define DEFAULT_Ki 1.54
-  // #define DEFAULT_Kd 76.55
-
-  // Ultimaker
-  //#define DEFAULT_Kp 22.2
-  //#define DEFAULT_Ki 1.08
-  //#define DEFAULT_Kd 114
-
-  // MakerGear
-  //#define DEFAULT_Kp 7.0
-  //#define DEFAULT_Ki 0.1
-  //#define DEFAULT_Kd 12
-
-  // Mendel Parts V9 on 12V
-  //#define DEFAULT_Kp 63.0
-  //#define DEFAULT_Ki 2.25
-  //#define DEFAULT_Kd 440
 
 #endif // PIDTEMP
 
@@ -1159,11 +1138,11 @@
 #define Y_BED_SIZE 230
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
-#define X_MIN_POS 0
-#define Y_MIN_POS 0
+#define X_MIN_POS -1
+#define Y_MIN_POS -27
 #define Z_MIN_POS 0
-#define X_MAX_POS X_BED_SIZE + 25
-#define Y_MAX_POS Y_BED_SIZE + 15
+#define X_MAX_POS X_BED_SIZE + 28
+#define Y_MAX_POS Y_BED_SIZE
 #define Z_MAX_POS 200
 
 /**
