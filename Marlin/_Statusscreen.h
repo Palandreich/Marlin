@@ -21,7 +21,7 @@
  */
 #pragma once
 
-#define CONFIG_EXAMPLES_DIR "Creality/Ender-3 Duo"
+// #define CONFIG_EXAMPLES_DIR "Creality/Ender-3 Duo"
 
 /**
  * Custom Status Screen bitmap
